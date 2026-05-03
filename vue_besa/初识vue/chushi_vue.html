@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+   <!-- 插值表达式，取Vue对象 data 下 msg 这个数据  -->
+   {{msg}}
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script>
+    // 使用 vue.js 内部提供的 Vue这个构造方法，接收一个对象
+    new Vue({
+         el: "#app",  // 表示将当前创建的这个Vue对象挂载到哪个节点
+         data() {     // vue的数据部分
+            return {  
+                // 在return内部定义页面所需要的数据
+                msg: "Hello World"
+            }
+         }
+    });
+</script>
+    <h1>我的第一个标题</h1>
+    <p>我的第一个段落。</p>
+</body>
+</html>

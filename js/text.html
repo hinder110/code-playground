@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hallow world!!!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>hinderwjj的web</h1>
+    </header>
+    <nav>
+        <a href="#home">首页</a>
+        <a href="#about">关于</a>
+        <a href="#contact">联系</a>
+        <a href="#my">我的</a>
+    </nav>
+    <section id="home">
+        <h2>首页</h2>
+        <p>在这里插入图片怎么样哈哈哈，不知道用markdown可以吗？</p>
+        <img src="https://scpic.chinaz.net/files/default/imgs/2024-05-31/ab11944e46865b54.jpg">
+    </section>
+    <section id="about">
+        <h2>关于</h2>
+        <p>这是我的第一个用来玩的html网页</p>
+    </section>
+    <section id="contact">
+        <h2>联系</h2>
+        <p>联系qq：2553428006</p>
+    </section>
+    <section id="my">
+        <h2>我的</h2>
+        <h1>hallow</h1>
+    </section>
+    <footer>
+        <p>&copy; 2025 hinder110的网页. 保留所有权利。</p>
+    </footer>
+    <script src="script.js"></script>
+
+    <div id="my">
+        <img src="https://scpic.chinaz.net/files/default/imgs/2024-05-31/ab11944e46865b54.jpg" alt="动漫图片">
+        <button id="close-button">关闭</button>
+    </div>
+    <script>
+        // 获取可点击的文字
+        const clickableText = document.getElementById('clickable-text');
+        // 获取弹出框
+        const my = document.getElementById('popup');
+        // 获取关闭按钮
+        const closeButton = document.getElementById('close-button');
+
+        // 定义显示弹出框的函数
+        function showMy() {
+            my.style.display = 'block';
+        }
+ // 定义隐藏弹出框的函数
+        function hideMy() {
+            my.style.display = 'none';
+        }
+
+        // 为可点击的文字添加点击事件监听器
+        clickableText.addEventListener('click', showMy);
+
+        // 为关闭按钮添加点击事件监听器
+        closeButton.addEventListener('click', hideMy);
+    </script>
+</body>
+</html>
